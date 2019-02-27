@@ -15,3 +15,21 @@
 | 获取products表 | /products | get |  | keyword, brandId, seriesId | | 参数用于过滤(and) |
 | 获取seriess表 | /seriess | get |  | keyword, brandId |  | 参数用于过滤(and) |
 | 获取brands表 | /brands | get |  | keyword |  | 参数用于过滤(and) |
+
+## 状态码:
+| status | Description |
+|:------:|:-----------:|
+| 成功返回码 |
+| 0 | 请求成功 |
+| 100 | 登录成功 |
+| 101 | 注销成功 |
+| 200 | 上传成功 |
+| 失败返回码 |
+| 401 | 账号不存在 |
+| 402 | 密码错误 |
+| 403 | 没有权限 |
+| 404 | 页面搞丢了 |
+| 上传错误 |
+| 1000 | 上传失败：系统错误 |
+| 1001 | 上传失败：文件不存在 |
+| default | 未知错误 |
