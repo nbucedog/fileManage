@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HOPPO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+  <!-- Demo styles -->
+  <style>
+  	.div-video{
+  		margin-bottom:20%;
+  		text-align: center;
+  	}
+  </style>
+</head>
+<body>
+	<div class="div-video">
+		<video id="videoId" width="100%" controls="controls" preload="auto">
+  			<!-- <source src="src/test.mp4" type="video/mp4"> -->
+  			视频在赶来的路上
+  		</video>
+	</div>
+  <script type="text/javascript">
+    var query = "src/" + window.location.hash.substring(1);
+    console.log(query);
+    var obj = document.getElementById("videoId");
+    obj.src = query;
+  </script>
+</body>
+</html>

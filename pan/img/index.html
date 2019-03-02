@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<title>HOPPO</title>
+	<style type="text/css">
+		#imgId{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<img id="imgId">
+	</div>
+	<script type="text/javascript">
+		var query = "src/" + window.location.hash.substring(1);
+		console.log(query);
+		var obj = document.getElementById("imgId");
+		obj.src = query;
+	</script>
+</body>
+</html>
