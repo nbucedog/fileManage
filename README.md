@@ -4,6 +4,7 @@
 :------: | :-------:|:------:|:----------------|:----------------|:----------:|:----:|
 | Base Url | pan.hoppo.com.cn/api |
 | 获取文件信息 | /fileInfo | get |  | keyword, fileType, brandId, seriesId |  | 参数用于过滤(and) |
+| 获取关联信息 | /relativeInfo | post | fileName[] |  | formData | 数组可以为单个 |
 | 编辑文件信息 | /fileInfo | update | id | newBrandName, newSeriesName | json | 参数更新(or) |
 | 上传单个文件及信息 | /file | post | 选择一个文件 | | formData | 文件名必须为:code_类型.后缀 |
 | 删除单个文件及信息 | /file | delete | id |  | json |  |
