@@ -22,7 +22,7 @@
   		</video>
 	</div>
   <script type="text/javascript">
-    var query = "src/" + window.location.hash.substring(1);
+    var query = "src/" + window.location.search.substring(1);
     console.log(query);
     var obj = document.getElementById("videoId");
     obj.src = query;
