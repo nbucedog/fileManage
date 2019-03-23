@@ -23,7 +23,8 @@
 	</div>
   <script type="text/javascript">
     var query = "src/" + window.location.search.substring(1);
-    console.log(query);
+    // var dequery = decodeURI(decodeURI(query));
+    console.log(dequery);
     var obj = document.getElementById("videoId");
     obj.src = query;
   </script>
