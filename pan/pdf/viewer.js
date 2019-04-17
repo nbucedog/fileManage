@@ -4201,7 +4201,7 @@ var pdfjsLib;
 if (typeof window !== 'undefined' && window['pdfjs-dist/build/pdf']) {
   pdfjsLib = window['pdfjs-dist/build/pdf'];
 } else {
-  pdfjsLib = require('../build/pdf.js');
+  pdfjsLib = require('build/pdf.js');//修改
 }
 
 module.exports = pdfjsLib;
@@ -5264,7 +5264,7 @@ var defaultOptions = {
     kind: OptionKind.WORKER
   },
   workerSrc: {
-    value: '../build/pdf.worker.js',
+    value: 'build/pdf.worker.js',//修改
     kind: OptionKind.WORKER
   }
 };

@@ -4,9 +4,7 @@
   <meta charset="utf-8">
   <title>HOPPO</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-
-
-  <!-- Demo styles -->
+  <script type="text/javascript" src="../share/cookie.js"></script>
   <style>
   	.div-video{
   		margin-bottom:20%;
@@ -17,16 +15,18 @@
 <body>
 	<div class="div-video">
 		<video id="videoId" width="100%" controls="controls" preload="auto">
-  			<!-- <source src="src/test.mp4" type="video/mp4"> -->
   			视频在赶来的路上
   		</video>
 	</div>
   <script type="text/javascript">
-    var query = "src/" + window.location.search.substring(1);
-    // var dequery = decodeURI(decodeURI(query));
-    console.log(dequery);
-    var obj = document.getElementById("videoId");
+    var filename=window.location.search.substring(1);
+    var query="src/"+filename;
+    var obj=document.getElementById("videoId");
     obj.src = query;
+    if(getCookie(filename)!="viewed"){
+      document.cookie=filename+"=viewed;max-Age=604800";
+      //access the API here!
+    }
   </script>
 </body>
 </html>
