@@ -16,9 +16,9 @@
 | 获取products表 | /products | get |  | keyword, brandId, seriesId | | 参数用于过滤(and) |
 | 获取seriess表 | /seriess | get |  | keyword, brandId |  | 参数用于过滤(and) |
 | 获取brands表 | /brands | get |  | keyword |  | 参数用于过滤(and) |
-| 上传tupian | /tupian/upload | post | 单个文件 |  |  |  |
-| 获取tupian信息 | /tupian/info | get |  |  |  |  |
-| 删除tupian文件及信息 | /tupian/delete | delete | [id,fileName] |  |  |  |
+| 上传tupian | /tupian | post | 单个文件 |  | formData |  |
+| 获取tupian信息 | /tupian | get |  |  |  |  |
+| 删除tupian及信息 | /tupian | delete | [id,fileName] |  | json |  |
 
 ## 状态码:
 | status | Description |
