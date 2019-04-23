@@ -17,8 +17,8 @@
 | 获取products表 | /products | get |  | keyword, brandId, seriesId | | 未用 |
 | 获取seriess表 | /seriess | get |  | keyword, brandId |  | 未用 |
 | 获取brands表 | /brands | get |  | keyword |  | 未用 |
-| 上传tupian | /tupian | post | 单个文件 |  | formData |  |
-| 获取tupian信息 | /tupian | get |  |  |  |  |
+| 上传tupian | /tupian | post | 单个文件 | description | formData | description最多300字 |
+| 获取tupian信息 | /tupian | get |  | id | url |  |
 | 删除tupian及信息 | /tupian | delete | [id,fileName] |  | json |  |
 
 ## 状态码:
